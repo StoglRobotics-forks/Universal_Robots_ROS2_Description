@@ -54,6 +54,13 @@
           <param name="tool_tx_idle_chars">${tool_tx_idle_chars}</param>
           <param name="tool_device_name">${tool_device_name}</param>
           <param name="tool_tcp_port">${tool_tcp_port}</param>
+
+          <param name="aux_script_base_path">/home/deniss/workspace/bosch_galactic/src/Universal_Robots_ROS2_Driver/ur_robot_driver/resources/</param>
+          <!-- For multiple scripts - split filenames using ";" -->
+          <param name="aux_script_filenames">custom_script_1.urscript;custom_script_2.urscript</param>
+          <!-- Split arguments using ";" -->
+          <param name="aux_script_arguments">DRILL_POS_X_REPLACE;DRILL_POS_Y_REPLACE;DRILL_POS_Z_REPLACE;DRILL_DEPTH_REPLACE</param>
+
         </xacro:unless>
       </hardware>
       <joint name="${prefix}shoulder_pan_joint">
